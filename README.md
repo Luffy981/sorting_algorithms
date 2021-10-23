@@ -32,6 +32,7 @@ Advanced:
 
 ### Authors
 ***
+Holberton Students
 ********
 Ray Trujillo - [Github](https://github.com/rayd1893)
 
