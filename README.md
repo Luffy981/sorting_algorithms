@@ -12,11 +12,11 @@
 * pycodestyle (version 2.7.*)
 ### Sorting algorithms
 #### Selection sort:
-<a href="selection sort"><img src="https://miro.medium.com/max/1400/1*5WXRN62ddiM_Gcf4GDdCZg.gif"  height="100" width="600" ></a>
+<a href="selection sort"><img src="https://miro.medium.com/max/1400/1*5WXRN62ddiM_Gcf4GDdCZg.gif"  height="300" width="600" ></a>
 #### Bubble sort:
-<a href="Bubble sort"><img src="https://miro.medium.com/max/401/1*7seGXJi3te9beNfpAvFXEQ.gif"  height="100" width="600" ></a>
+<a href="Bubble sort"><img src="https://miro.medium.com/max/401/1*7seGXJi3te9beNfpAvFXEQ.gif"  height="300" width="600" ></a>
 #### Insertion sort:
-<a href="inertion sort"><img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Insertion-sort-example.gif"  height="100" width="600" ></a>
+<a href="inertion sort"><img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Insertion-sort-example.gif"  height="300" width="600" ></a>
 ### Proyectos
 ***
 All the following folders are projects made during studies:
