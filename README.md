@@ -32,8 +32,10 @@ Advanced:
 
 ### Authors
 ***
-*****Holberton School Students
+********Holberton School Students
+
 Ray Trujillo - [Github](https://github.com/rayd1893)
+
 Jhon Smith Flores - [Github](https://github.com/Luffy981) - [Twiter](https://twitter.com/Luffy_981) - [Facebook](https://web.facebook.com/JhonSmithSoulOfGold)
 
 
