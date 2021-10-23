@@ -16,7 +16,7 @@
 #### Bubble sort:
 <a href="Bubble sort"><img src="https://miro.medium.com/max/401/1*7seGXJi3te9beNfpAvFXEQ.gif"  height="100" width="600" ></a>
 #### Insertion sort:
-<a href="inertion sort"><img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Insertion-sort-example.gif"  height="600" width="100" ></a>
+<a href="inertion sort"><img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Insertion-sort-example.gif"  height="100" width="600" ></a>
 ### Proyectos
 ***
 All the following folders are projects made during studies:
