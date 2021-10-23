@@ -15,6 +15,8 @@
 ![Insertion sort](https://miro.medium.com/max/1400/1*5WXRN62ddiM_Gcf4GDdCZg.gif)
 #### Bubble sort:
 ![Bubble sort](https://miro.medium.com/max/401/1*7seGXJi3te9beNfpAvFXEQ.gif)
+#### Insertion sort:
+![Insertion sort](https://upload.wikimedia.org/wikipedia/commons/f/f2/Dark_inverted_insertion_sorting.gif)
 ### Proyectos
 ***
 All the following folders are projects made during studies:
