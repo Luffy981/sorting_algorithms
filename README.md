@@ -12,8 +12,7 @@
 * pycodestyle (version 2.7.*)
 ### Sorting algorithms
 
-![Hodor_img](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/261/giphy_hodor.gif)
-[Insertion sort](https://miro.medium.com/max/1400/1*5WXRN62ddiM_Gcf4GDdCZg.gif)
+![Insertion sort](https://miro.medium.com/max/1400/1*5WXRN62ddiM_Gcf4GDdCZg.gif)
 ### Proyectos
 ***
 All the following folders are projects made during studies:
