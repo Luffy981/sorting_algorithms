@@ -11,7 +11,7 @@
 * Ubuntu 20.04 LTS using python3 (version 3.8.5)
 * pycodestyle (version 2.7.*)
 ### Sorting algorithms
-
+#### Insertion sort:
 ![Insertion sort](https://miro.medium.com/max/1400/1*5WXRN62ddiM_Gcf4GDdCZg.gif)
 ### Proyectos
 ***
