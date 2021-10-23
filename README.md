@@ -11,9 +11,9 @@
 * Ubuntu 20.04 LTS using python3 (version 3.8.5)
 * pycodestyle (version 2.7.*)
 ### Sorting algorithms
-#### Insertion sort:
+#### Selection sort:
 ![Insertion sort](https://miro.medium.com/max/1400/1*5WXRN62ddiM_Gcf4GDdCZg.gif)
-### Bubble sort:
+#### Bubble sort:
 ![Bubble sort](https://miro.medium.com/max/401/1*7seGXJi3te9beNfpAvFXEQ.gif)
 ### Proyectos
 ***
