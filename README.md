@@ -12,7 +12,7 @@
 * pycodestyle (version 2.7.*)
 ### Sorting algorithms
 #### Selection sort:
-<a href="selection sort"><img src="https://miro.medium.com/max/1400/1*5WXRN62ddiM_Gcf4GDdCZg.gif"  height="300" width="600" ></a>
+<a href="selection sort"><img src="https://miro.medium.com/max/1400/1*5WXRN62ddiM_Gcf4GDdCZg.gif" align="middle" height="300" width="600" ></a>
 #### Bubble sort:
 <a href="Bubble sort"><img src="https://miro.medium.com/max/401/1*7seGXJi3te9beNfpAvFXEQ.gif"  height="300" width="600" ></a>
 #### Insertion sort:
