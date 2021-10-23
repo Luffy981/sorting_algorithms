@@ -32,6 +32,7 @@ void insertion_sort_list(listint_t **list)
 			node = node->prev;
 			tmp = node->n;
 		}
+		print_list(*list);
 		hole = save1;
 		node = save2;
 		hole = hole->next;
