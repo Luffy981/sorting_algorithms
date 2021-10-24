@@ -23,7 +23,6 @@ void insertion_sort_list(listint_t **list)
 		tmp = hole->n;
 		while (hole && hole->n > node->n)
 		{
-			print_list(*list);
 			tmp = hole->n;
 			hole->n = node->n;
 			node->n = tmp;
@@ -31,6 +30,7 @@ void insertion_sort_list(listint_t **list)
 				hole = hole->prev;
 			node = node->prev;
 			tmp = node->n;
+			print_list(*list);
 		}
 		hole = save1;
 		node = save2;
