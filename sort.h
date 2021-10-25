@@ -33,6 +33,7 @@ void radix_sort(int *array, size_t size);
 void bitonic_sort(int *array, size_t size);
 void quick_sort_hoare(int *array, size_t size);
 
+int max_value(int *array, size_t size);
 int partition(int *A, int start, int end, int size);
 void quick(int *array, int start, int end, size_t size);
 void print_array(const int *array, size_t size);
