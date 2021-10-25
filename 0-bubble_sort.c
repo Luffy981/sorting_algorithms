@@ -16,10 +16,10 @@ void bubble_sort(int *array, size_t size)
 	int flag = 0;
 	int tmp;
 
-	if (sizeof(array) == 0)
-	     return;
+	if (sizeof(array) == 0 || size == 0)
+		return;
 
-	for (i = 0 ; i < size - 1 ; i++)
+	for (i = 0 ; i < size ; i++)
 	{
 		flag = 0;
 		for (j = 0 ; j < size - i - 1 ; j++)

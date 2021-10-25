@@ -37,6 +37,15 @@ void insertion_sort_list(listint_t **list)
 		head = head->next;
 	}
 }
+
+/**
+ * swap_nodes - Swap nodes
+ * @turtle: List 1
+ * @rabbit: List 2
+ * @list: List
+ *
+ * Return: Nothing
+ */
 void swap_nodes(listint_t **turtle, listint_t **rabbit, listint_t **list)
 {
 	listint_t *before;
