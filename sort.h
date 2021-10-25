@@ -38,4 +38,5 @@ void quick(int *array, int start, int end, size_t size);
 void print_array(const int *array, size_t size);
 void print_list(const listint_t *list);
 
+void swap_nodes(listint_t **turtle, listint_t **rabbit, listint_t **list);
 #endif
