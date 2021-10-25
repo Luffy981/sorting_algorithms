@@ -6,6 +6,7 @@ void cocktail_sort_list(listint_t **list)
 	int left_limit = -1;
 	int right_limit = -1;
 	int count = 0;
+	int flag = 0;
 	if (!list || !(*list) || (!((*list)->prev) && !((*list)->next)))
 		return;
 	turtle = *list;
@@ -16,7 +17,7 @@ void cocktail_sort_list(listint_t **list)
 		while (turtle && rabbit && count != right_limit)
 		{
 			if (turtle->n > rabbit->n)
-				swap_nodes(&turtle, &rabbit, list), print_list(*list);
+				swap_nodes(&turtle, &rabbit, list), print_list(*list), flag = 1;
 			turtle = turtle->next;
 			rabbit = rabbit->next;
 			count++;
@@ -29,11 +30,14 @@ void cocktail_sort_list(listint_t **list)
 		while (turtle && rabbit && count >= left_limit)
 		{
 			if (turtle->n < rabbit->n)
-				swap_nodes(&rabbit, &turtle, list), print_list(*list);
+				swap_nodes(&rabbit, &turtle, list), print_list(*list), flag = 1;
 			turtle = turtle->prev;
 			rabbit = rabbit->prev;
 			count--;
 		}
+		if (flag == 0)
+			break;
+		flag = 0;
 		turtle = turtle->next;
 		rabbit = turtle->next;
 	}
