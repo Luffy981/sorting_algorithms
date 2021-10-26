@@ -1,11 +1,19 @@
 #include "sort.h"
 
+/**
+ * shell_sort - Shell sort
+ * @array: Array
+ * @size: Size
+ *
+ * Return: Nothing
+ */
 void shell_sort(int *array, size_t size)
 {
 	size_t gap = 0;
 	int i;
 	size_t j;
 	int tmp;
+
 	if (size <= 1)
 		return;
 	while ((3 * gap + 1) <= size)
