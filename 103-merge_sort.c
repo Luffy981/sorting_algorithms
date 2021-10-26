@@ -1,11 +1,19 @@
 #include "sort.h"
+/**
+ * merger - Merger
+ * @arr: Array
+ * @left: Left
+ * @right: Right
+ * @s_left: Size of left
+ * @s_right: Size of right
+ *
+ * Return: Nothing
+ */
 void merger(int *arr, int  *left, int *right, int s_left, int s_right)
 {
-	int *ptr3 = arr;
-	int *ptr1 = left;
-	int *ptr2 = right;
-	int i = 0;
-	int j = 0;
+	int *ptr3 = arr, *ptr1 = left, *ptr2 = right;
+	int i = 0, j = 0;
+
 	printf("Merging...\n");
 	printf("[left]: ");
 	print_array(left, s_left);
@@ -45,6 +53,13 @@ void merger(int *arr, int  *left, int *right, int s_left, int s_right)
 	print_array(arr, s_left + s_right);
 }
 
+/**
+ * merge_sort - Merge sort
+ * @array: Array
+ * @size: Size
+ *
+ * Return: Nothing
+ */
 void merge_sort(int *array, size_t size)
 {
 	int mid = size / 2;

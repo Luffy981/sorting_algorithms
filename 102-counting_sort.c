@@ -1,6 +1,12 @@
 #include "sort.h"
 
-
+/**
+ * max_value - Max value
+ * @array: Array
+ * @size: Size
+ *
+ * Return: Max value
+ */
 int max_value(int *array, size_t size)
 {
 	size_t i = 0;
@@ -15,12 +21,20 @@ int max_value(int *array, size_t size)
 	return (max_value);
 }
 
+/**
+ * counting_sort - Sort array
+ * @array: Array
+ * @size: Size
+ *
+ * Return: Nothing
+ */
 void counting_sort(int *array, size_t size)
 {
 	int *count_array = NULL;
 	int *new_array = NULL;
 	int max = 0;
 	int i = 0;
+
 	if (size <= 1)
 		return;
 	max = max_value(array, size);
