@@ -2,7 +2,7 @@
 
 void shell_sort(int *array, size_t size)
 {
-	size_t gap;
+	size_t gap = 0;
 	int i;
 	size_t j;
 	int tmp;
