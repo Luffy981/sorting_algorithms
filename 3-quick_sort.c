@@ -1,5 +1,5 @@
 #include "sort.h"
-int partition(int *A, int start, int end, int size)
+int partition(int *A, int start, int end, size_t size)
 {
 	int *pivot = &A[end];
 	int part_idx = start;
@@ -17,6 +17,7 @@ int partition(int *A, int start, int end, int size)
 			tmp = *ptr1;
 			*ptr1 = *ptr2;
 			*ptr2 = tmp;
+			print_array(A, size);
 			part_idx++;
 
 		}
