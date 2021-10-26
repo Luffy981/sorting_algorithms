@@ -1,5 +1,14 @@
 #include "sort.h"
 
+/**
+ * max_heapify - Heap maximo
+ * @array: Array
+ * @size: Size of array
+ * @i: index
+ * @print_size: Size
+ *
+ * Return: Nothing
+ */
 void max_heapify(int *array, size_t size, size_t i, size_t print_size)
 {
 	int largest = i;
@@ -26,6 +35,13 @@ void max_heapify(int *array, size_t size, size_t i, size_t print_size)
 
 }
 
+/**
+ * heap_sort - Heap sort
+ * @array: Array
+ * @size: Size
+ *
+ * Return: Nothing
+ */
 void heap_sort(int *array, size_t size)
 {
 	int i;
