@@ -21,13 +21,12 @@ int partition(int *A, int start, int end, size_t size)
 				*ptr1 = *ptr2;
 				*ptr2 = tmp;
 				print_array(A, size);
-
 			}
 		}
-		ptr2 = &A[part_idx];
 	}
 	if (A[part_idx + 1] != A[end])
 	{
+		ptr2 = &A[part_idx + 1];
 		tmp = *ptr2;
 		*ptr2  = *pivot;
 		*pivot = tmp;
