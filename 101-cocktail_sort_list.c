@@ -1,4 +1,11 @@
 #include "sort.h"
+
+/**
+ * cocktail_sort_list - Sort list
+ * @list: list
+ *
+ * Return: Nothing
+ */
 void cocktail_sort_list(listint_t **list)
 {
 	listint_t *turtle = NULL;
