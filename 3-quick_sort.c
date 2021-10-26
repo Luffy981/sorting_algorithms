@@ -33,7 +33,7 @@ int partition(int *A, int start, int end, size_t size)
 		print_array(A, size);
 
 	}
-	return (part_idx);
+	return (part_idx + 1);
 }
 
 void quick(int *array, int start, int end, size_t size)
