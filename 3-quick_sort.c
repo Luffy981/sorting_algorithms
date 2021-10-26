@@ -2,31 +2,38 @@
 int partition(int *A, int start, int end, size_t size)
 {
 	int *pivot = &A[end];
-	int part_idx = start;
+	int part_idx = start - 1;
 	int i;
 	int tmp;
 	int *ptr1 = NULL;
 	int *ptr2 = NULL;
 
-	for (i = start ; i < end ; i++)
+	for (i = start ; i <= end - 1 ; i++)
 	{
 		ptr1 = &A[i];
 		ptr2 = &A[part_idx];
-		if (*ptr1 <= *pivot)
+		if (*ptr1 < *pivot)
 		{
-			tmp = *ptr1;
-			*ptr1 = *ptr2;
-			*ptr2 = tmp;
-			print_array(A, size);
 			part_idx++;
+			if (*ptr2 != *ptr1)
+			{
+				tmp = *ptr1;
+				*ptr1 = *ptr2;
+				*ptr2 = tmp;
+				print_array(A, size);
 
+			}
 		}
 		ptr2 = &A[part_idx];
 	}
-	tmp = *ptr2;
-	*ptr2  = *pivot;
-	*pivot = tmp;
-	print_array(A, size);
+	if (A[part_idx + 1] != A[end])
+	{
+		tmp = *ptr2;
+		*ptr2  = *pivot;
+		*pivot = tmp;
+		print_array(A, size);
+
+	}
 	return (part_idx);
 }
 
@@ -44,6 +51,8 @@ void quick(int *array, int start, int end, size_t size)
 }
 void quick_sort(int *array, size_t size)
 {
+	if (size <= 1)
+		return;
 	quick(array, 0, size - 1, size);
 }
 
