@@ -16,6 +16,7 @@ void selection_sort(int *array, size_t size)
 	int *ron = NULL;
 	int min_idx = 0;
 	int swap;
+
 	if (size <= 1)
 		return;
 
