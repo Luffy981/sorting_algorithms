@@ -6,6 +6,11 @@ void merger(int *arr, int  *left, int *right, int s_left, int s_right)
 	int *ptr2 = right;
 	int i = 0;
 	int j = 0;
+	printf("Merging...\n");
+	printf("[left]: ");
+	print_array(left, s_left);
+	printf("[right]: ");
+	print_array(right, s_right);
 	while (i < s_left && j < s_right)
 	{
 		if (*ptr1 <= *ptr2)
@@ -36,6 +41,8 @@ void merger(int *arr, int  *left, int *right, int s_left, int s_right)
 		ptr3++;
 		j++;
 	}
+	printf("[Done]: ");
+	print_array(arr, s_left + s_right);
 }
 
 void merge_sort(int *array, size_t size)
@@ -58,7 +65,6 @@ void merge_sort(int *array, size_t size)
 	{
 		right[i - mid] = array[i];
 	}
-	print_array(array, size);
 	merge_sort(left, mid);
 	merge_sort(right, size - mid);
 	merger(array, left, right, mid, size - mid);
