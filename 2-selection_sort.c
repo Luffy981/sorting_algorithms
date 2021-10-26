@@ -8,25 +8,34 @@ void selection_sort(int *array, size_t size)
 	int *vodka = NULL;
 	int *ron = NULL;
 	int min_idx = 0;
+	int swap;
+	if (size <= 1)
+		return;
 
-	for (i = 0 ; i < size - 1 ; i++)
+	for (i = 0 ; i < size ; i++)
 	{
+		swap = 0;
 		min_idx = i;
 		vodka = &array[i];
-		for (j = i + 1 ; j < size ; j++)
+		for (j = i ; j < size ; j++)
 		{
 			ron = &array[j];
 			if (*ron < *vodka)
 			{
 				min_idx = j;
 				vodka = &array[min_idx];
+				swap = 1;
 			}
 		}
-		vodka = &array[i];
-		ron = &array[min_idx];
-		tmp = *vodka;
-		*vodka = *ron;
-		*ron = tmp;
-		print_array(array, size);
+		if (swap == 1)
+		{
+			vodka = &array[i];
+			ron = &array[min_idx];
+			tmp = *vodka;
+			*vodka = *ron;
+			*ron = tmp;
+			print_array(array, size);
+
+		}
 	}
 }
