@@ -1,5 +1,13 @@
 #include "sort.h"
 
+/**
+ * recursive_radix_sort - Function to sort
+ * @array: Array
+ * @result: result
+ * @size: Size
+ * @lsd: parameter
+ *
+ */
 void recursive_radix_sort(int *array, int *result, size_t size, int lsd)
 {
 	int idx_start;
@@ -27,7 +35,12 @@ void recursive_radix_sort(int *array, int *result, size_t size, int lsd)
 	print_array(array, size);
 	recursive_radix_sort(array, result, size, lsd * 10);
 }
-
+/**
+ * radix_sort - Function sort
+ * @array: Array
+ * @size: Size
+ *
+ */
 void radix_sort(int *array, size_t size)
 {
 	int *result;
