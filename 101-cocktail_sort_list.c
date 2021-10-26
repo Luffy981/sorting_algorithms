@@ -12,8 +12,8 @@ void cocktail_sort_list(listint_t **list)
 	listint_t *rabbit = NULL;
 	int left_limit = -1;
 	int right_limit = -1;
-	int count = 0;
-	int flag = 0;
+	int count = 0, flag = 0;
+
 	if (!list || !(*list) || (!((*list)->prev) && !((*list)->next)))
 		return;
 	turtle = *list;
@@ -49,6 +49,15 @@ void cocktail_sort_list(listint_t **list)
 		rabbit = turtle->next;
 	}
 }
+
+/**
+ * swap_nodes - Swap nodes
+ * @turtle: List1
+ * @rabbit: list2
+ * @list: List
+ *
+ * Return: Nothing
+ */
 void swap_nodes(listint_t **turtle, listint_t **rabbit, listint_t **list)
 {
 	listint_t *before;
