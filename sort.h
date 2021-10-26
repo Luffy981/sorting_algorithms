@@ -39,5 +39,7 @@ void quick(int *array, int start, int end, size_t size);
 void print_array(const int *array, size_t size);
 void print_list(const listint_t *list);
 
+void max_heapify(int *array, size_t size, size_t i, size_t print_size);
+void merger(int *arr, int  *left, int *right, int s_left, int s_right);
 void swap_nodes(listint_t **turtle, listint_t **rabbit, listint_t **list);
 #endif
