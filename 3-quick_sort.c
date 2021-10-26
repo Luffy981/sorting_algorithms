@@ -11,10 +11,10 @@ int partition(int *A, int start, int end, size_t size)
 	for (i = start ; i <= end - 1 ; i++)
 	{
 		ptr1 = &A[i];
-		ptr2 = &A[part_idx];
 		if (*ptr1 < *pivot)
 		{
 			part_idx++;
+			ptr2 = &A[part_idx];
 			if (*ptr2 != *ptr1)
 			{
 				tmp = *ptr1;
@@ -40,13 +40,12 @@ void quick(int *array, int start, int end, size_t size)
 {
 
 	int part_idx;
+	if (start >= end)
+		return;
 
-	if (start < end)
-	{
-		part_idx = partition(array, start, end, size);
-		quick(array, start, part_idx - 1, size);
-		quick(array, part_idx + 1, end, size);
-	}
+	part_idx = partition(array, start, end, size);
+	quick(array, start, part_idx - 1, size);
+	quick(array, part_idx + 1, end, size);
 }
 void quick_sort(int *array, size_t size)
 {
