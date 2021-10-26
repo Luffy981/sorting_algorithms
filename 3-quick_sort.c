@@ -1,4 +1,14 @@
 #include "sort.h"
+
+/**
+ * partition - Partition
+ * @A: array
+ * @start: Start array
+ * @end: End array
+ * @size: Size of array
+ *
+ * Return: Partition
+ */
 int partition(int *A, int start, int end, size_t size)
 {
 	int *pivot = &A[end];
@@ -37,6 +47,15 @@ int partition(int *A, int start, int end, size_t size)
 	return (part_idx);
 }
 
+/**
+ * quick - Quick
+ * @array: array
+ * @start: Start array
+ * @end: End array
+ * @size: Size of array
+ *
+ * Return: Nothing
+ */
 void quick(int *array, int start, int end, size_t size)
 {
 
@@ -49,10 +68,17 @@ void quick(int *array, int start, int end, size_t size)
 		quick(array, part_idx + 1, end, size);
 	}
 }
+
+/**
+ * quick_sort - Quick
+ * @array: array
+ * @size: Size of array
+ *
+ * Return: Nothing
+ */
 void quick_sort(int *array, size_t size)
 {
 	if (size <= 1)
 		return;
 	quick(array, 0, size - 1, size);
 }
-
